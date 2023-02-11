@@ -253,3 +253,12 @@ section .content .card img {
   width: 100%;
   border-radius: 10px 10px 0 0;
 }
+
+/* footer */
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  user-select: none;
+}
