@@ -1,0 +1,98 @@
+@import url("https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;500;600&display=swap");
+
+:root {
+  --bg: #f8fafc;
+  --primary: #014ed5;
+  --plant: #00baa0;
+  --landing: #e4effd;
+  --btn: #102851;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Baloo 2", cursive;
+  color: var(--btn);
+}
+
+img {
+  user-select: none;
+}
+
+body {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  min-height: 100vh;
+}
+
+/* header */
+header {
+  padding: 20px;
+  display: flex;
+  gap: 0 20px;
+  box-shadow: 0 0 5px #ddd;
+  align-items: center;
+}
+
+header .logo {
+  display: flex;
+  align-items: center;
+}
+
+header img {
+  width: 30px;
+}
+
+/* box */
+.box .send {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 20px;
+}
+
+.box .send img {
+  width: 30px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+}
+
+/* msg */
+.msg {
+  display: flex;
+  position: relative;
+}
+
+.msg input {
+  border: 0;
+  padding: 20px;
+  width: 100vw;
+  background: var(--bg);
+}
+
+.msg input:focus,
+.msg button {
+  outline: none;
+}
+
+.msg button {
+  border: 0;
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  transform: translateY(-50%);
+  background: transparent;
+}
+
+.msg button img {
+  width: 20px;
+}
